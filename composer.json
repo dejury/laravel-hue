@@ -1,0 +1,35 @@
+{
+  "name": "dejury/laravel-hue",
+  "description": "A package to interact with the Hue API v2",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Dejury\\LaravelHue\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Dejury\\LaravelHue\\Tests\\": "tests"
+    }
+  },
+  "authors": [
+    {
+      "name": "Jonathan Hafkamp",
+      "email": "jonathan@hafkamp.net"
+    }
+  ],
+  "require": {
+    "sammyjo20/saloon": "^1.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "orchestra/testbench": "^7.0",
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Dejury\\LaravelHue\\LaravelHueServiceProvider"
+        ]
+      }
+    }
+  }
+}
